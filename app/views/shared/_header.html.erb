@@ -1,0 +1,64 @@
+<%# TODO: Way of putting this into home and show and not use conditional.
+That way, showcase_text can be a page part. %>
+
+<% if home_page? %>
+
+  <div id="showcase">
+    <div id="showcase_image"><img name="SLIDESIMG" src=
+      "images/assets/slide1_church.jpg" width="564" height="226" border="0" style=
+    "filter:progid:DXImageTransform.Microsoft.Fade()" alt="Slideshow image" id=
+    "SLIDESIMG" /></div>
+    <script type="text/javascript">
+    //<![CDATA[
+    <!--
+    
+    if (document.images) {
+    
+        SLIDES.image = document.images.SLIDESIMG;
+    
+        // Create a function to ramp up the image opacity in Mozilla
+        var fadein_opacity = 0;
+        var fadein_img = SLIDES.image;
+        function fadein(opacity) {
+        if (typeof opacity != 'undefined') fadein_opacity = opacity;
+        if (fadein_opacity < 1 && fadein_img && fadein_img.style &&
+        typeof fadein_img.style.MozOpacity != 'undefined') {
+    
+        fadein_opacity += .05;
+        fadein_img.style.MozOpacity = fadein_opacity;
+        setTimeout("fadein()", 50);
+      }
+    }
+
+    // Tell the slideshow to call our function whenever the slide is changed
+    SLIDES.post_update_hook = function() { fadein(0); }
+
+    }
+
+
+    //-->
+    //]]>
+    </script>
+
+    <div id="showcase_text">
+      <h2>Welcome to our church</h2>
+
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
+      hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel.</p>
+
+      <div class="topbutton">
+        <a href="#">What to expect</a>
+      </div>
+
+      <div class="topbutton">
+        <a href="#">How to get here</a>
+      </div>
+    </div>
+  </div><!-- /showcase --><% else %>
+
+  <div id="subname">
+    <h3>Who We Are </h3>
+    <div id="breadcrumb"><a href="#">home</a>/<a href="#">who we are</a></div>
+  </div>
+  
+<% end %>

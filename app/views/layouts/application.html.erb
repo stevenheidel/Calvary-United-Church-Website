@@ -13,10 +13,9 @@
         <div id="header" class="grid_12">
           <div id="menu5" class="grid_3">
             <ul>
+              <%# TODO: Make this dynamic. %>
               <li><a href="#">Staff Directory</a></li>
-              
               <li><a href="#">Audio Messages</a></li>
-              
               <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
@@ -29,10 +28,21 @@
             <%= render :partial => "/shared/menu" %>
           </div><!-- /main_menu -->
         </div><!-- /header -->
-        <%= yield %>
         
+        <div class="group"></div>
+        
+        <%= render :partial => "shared/header" %>
+        
+        <div class="group">
+          <%= yield %>
+        
+          <%= render :partial => "shared/sidebar" %>
+        </div><!-- /.group -->
       </div><!-- /wrap -->
     </div><!-- /outerwrap -->
+    
+    <%= render :partial => "/shared/footer" %>
+    <!-- /fin -->
     <%= render :partial => "/shared/javascripts" %>
   </body>
 </html>

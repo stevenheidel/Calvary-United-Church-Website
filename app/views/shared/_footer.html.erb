@@ -1,0 +1,23 @@
+<div id="footer_top"></div>
+
+<div id="footer_wrap">
+  <div id="footer" class="container_12">
+    <div class="grid_4">
+      <%# TODO: Dynamic Address %>
+      <h3>Calvary United Church</h3>
+
+      <p>114 25 Street East<br />
+        Prince Albert, SK<br />
+        S6V 1S5<br />
+        <strong>(306) 763-8695</strong></p>
+    </div>
+
+    <div class="grid_8">
+      <small>
+        <%= t('.copyright', :year => Time.now.year, :site_name => RefinerySetting.find_or_set(:site_name, "Company Name")) %>. 
+        Developed by <a href="http://livingskyweb.ca">Living Sky Web</a>.
+        Designed by <a href="http://stephaniehider.com">Stephanie Hider</a><img src="images/shiderflower.png" alt="stephanie_hider" />
+      </small>
+    </div>
+  </div><!-- /footer -->
+</div><!-- /footer_wrap -->
