@@ -1,0 +1,28 @@
+
+
+#horiz-menu li {
+margin-top: 6px;
+}
+
+
+
+div#horiz-menu li {
+float:left;
+list-style:none;
+color:#fff;
+margin:0;
+padding:0 4px 0 0;
+margin-top: 4px;
+}
+
+div#horiz-menu a {
+display:block;
+float:left;
+height:34px;
+line-height:38px;
+font-weight:700;
+text-decoration:none;
+text-transform:uppercase;
+color:#fff;
+padding:0 25px;
+}

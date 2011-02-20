@@ -1,0 +1,112 @@
+/*
+	Fluid 960 Grid System - IE Fixes (IE7 and greater)
+	Learn more ~ http://www.designinfluences.com/
+
+	Licensed under GPL and MIT.
+*/
+
+/* =Grid >> Global
+--------------------------------------------------------------------------------*/
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16
+{
+	margin-left: .92%;
+	margin-right: .92%;
+}
+
+
+#logo {
+margin-top: 0px;
+}
+
+#menu5  {
+margin-top: 6px;
+}
+
+#showcase {
+background:url(../images/showcase_bck.png) no-repeat;
+height:350px;
+float: left;
+margin-bottom:30px;
+margin-top: 0px;
+}
+
+#showcase_text {
+float:right;
+width:200px;
+padding-right:15px;
+margin-top:60px;
+}
+
+#showcase_image {
+float:left;
+width:564px;
+height:226px;
+padding-top:58px;
+padding-left:55px;
+}
+
+#showcase_image img {
+-moz-box-shadow:#aaa 3px 3px 10px;
+-webkit-box-shadow:#aaa 3px 3px 10px;
+float:left;
+border:1px solid #ded2b0;
+margin:0 20px 10px 0;
+}
+
+#horiz-menu {
+clear: both;
+margin-bottom: 50px;
+}
+
+#header {
+height: 170px;
+}
+
+.lightbox_top {
+height:9px;
+background:url(../images/sidebar_top.png) no-repeat;
+}
+
+.lightbox {
+background:url(../images/sidebar_middle.png) repeat-y;
+padding:10px 20px;
+min-height:100%;
+}
+
+.lightbox_bottom {
+height:9px;
+background:url(../images/sidebar_bottom.png) no-repeat;
+}
+
+.darkbox_top {
+height:9px;
+background:url(../images/sidebar_solid_top.png) no-repeat;
+}
+
+.darkbox {
+background:url(../images/sidebar_solid_middle.png);
+background-repeat: repeat-y;
+padding:10px 20px;
+min-height:100%;
+}
+
+.darkbox_bottom {
+height:9px;
+background:url(../images/sidebar_solid_bottom.png) no-repeat;
+}

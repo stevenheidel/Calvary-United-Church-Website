@@ -1,0 +1,71 @@
+<head>
+  <meta charset='<%= ::Refinery::Application.config.encoding %>' />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title><%= browser_title(yield(:title)) %></title>
+  <%= raw "<meta name=\"description\" content=\"#{@meta.meta_description}\" />" if @meta.meta_description.present? -%>
+  <%= raw "<meta name=\"keywords\" content=\"#{@meta.meta_keywords}\">" if @meta.meta_keywords.present? -%>
+  <%= csrf_meta_tag if RefinerySetting.find_or_set(:authenticity_token_on_frontend, true)-%>
+  <%= yield :meta %>
+
+  <%#= stylesheet_link_tag stylesheets_for_head(stylesheets||=%w(application formatting theme), theme ||= false),
+                          :cache => ("cache/application" if Rails.root.writable? and
+                                                            RefinerySetting.find_or_set(:use_resource_caching, true) and
+                                                            request.env['HTTP_USER_AGENT'] !~ /MSIE/ and (theme ||= false).blank?) %>
+  <%#= stylesheet_link_tag "home", :theme => theme if home_page? %>
+  
+  <%= stylesheet_link_tag "mainstyle.css" %>
+  
+  <%= stylesheet_link_tag "tabs.css", :media => "screen, projection" %>
+  
+  <!--[if IE]><!-->
+  <%= stylesheet_link_tag "ie.css", :media => "screen, projection" %>
+  <!-- <![endif]-->
+
+  <!--[if IE 8]><!-->
+  <%= stylesheet_link_tag "ie8.css", :media => "screen, projection" %>
+  <!-- <![endif]-->
+  
+  <!--[if IE 6]><!-->
+  <%= stylesheet_link_tag "ie6.css", :media => "screen, projection" %>
+  <!-- <![endif]-->
+  
+  <%= javascript_include_tag "slideshow.js" %>
+  
+  <script type="text/javascript">
+  //<![CDATA[
+  <!--
+
+  SLIDES = new slideshow("SLIDES");
+
+  // Create some slides and add custom filters for Microsoft IE
+  SLIDES.add_slide(s = new slide('images/assets/slide1_church.jpg'));
+  s.filter = 'progid:DXImageTransform.Microsoft.Pixelate()';
+
+  SLIDES.add_slide(s = new slide('images/assets/slide2_church.jpg'));
+  s.filter = 'progid:DXImageTransform.Microsoft.Fade()';
+
+  SLIDES.add_slide(s = new slide('images/assets/slide3_church.jpg'));
+  s.filter = 'progid:DXImageTransform.Microsoft.Barn()';
+
+  //-->
+  //]]>
+  </script>
+  
+  <%= javascript_include_tag "tabber.js" %>
+  
+  <script type="text/javascript">
+  //<![CDATA[
+
+  /* Optional: Temporarily hide the "tabber" class so it does not "flash"
+   on the page as plain HTML. After tabber runs, the class is changed
+   to "tabberlive" and it will appear. */
+
+  document.write('<style type="text/css">.tabber{display:none;}<\/style>');
+  //]]>
+  </script>
+
+  <%= yield :stylesheets %>
+  <%= render :partial => '/shared/google_analytics' unless local_request? %>
+
+  <%= javascript_include_tag 'modernizr-min' %>
+</head>

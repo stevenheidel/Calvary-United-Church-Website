@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%= render :partial => "/shared/html_tag" %>
+  <% site_bar = render(:partial => "/shared/site_bar", :locals => {:head => true}) -%>
+  <%= render :partial => "/shared/head" %>
+  
+  <body id="<%= home_page? ? "home" : "sub" %>" onload="SLIDES.play();">
+    <%= site_bar -%>
+    <%= render :partial => "/shared/ie6check" if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
+    
+    <div id="outer_wrap" class="container_12">
+      <div id="wrap" class="container_12">
+        <div id="header" class="grid_12">
+          <div id="menu5" class="grid_3">
+            <ul>
+              <li><a href="#">Staff Directory</a></li>
+              
+              <li><a href="#">Audio Messages</a></li>
+              
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          
+          <div id="logo">
+            <a href="/"><img src="images/assets/logo.png" alt="logo" /></a>
+          </div><!-- /logo -->
+          
+          <div id="horiz-menu" class="moomenu">
+            <%= render :partial => "/shared/menu" %>
+          </div><!-- /main_menu -->
+        </div><!-- /header -->
+        <%= yield %>
+        
+      </div><!-- /wrap -->
+    </div><!-- /outerwrap -->
+    <%= render :partial => "/shared/javascripts" %>
+  </body>
+</html>

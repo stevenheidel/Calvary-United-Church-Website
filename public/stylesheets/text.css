@@ -1,0 +1,152 @@
+/*
+	960 Grid System ~ Text CSS.
+	Learn more ~ http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+body {
+font:13px/1.5 "Trebuchet MS";
+color:#372e1f;
+}
+
+p {
+font-size:14px;
+}
+
+a:focus {
+outline:1px dotted invert;
+}
+
+hr {
+clear:both;
+height:0;
+border-color:#ccc;
+border-style:solid;
+border-width:1px 0 0;
+}
+
+h1 {
+font-size:2em;
+padding:5px;
+}
+
+h2 {
+font-size:23px;
+margin-top:1em;
+}
+
+h3 {
+font-size:1.45em;
+}
+
+h4 {
+font-size:.95em;
+line-height:.5em;
+}
+
+h5 {
+font-size:1.2em;
+}
+
+h6 {
+font-size:1em;
+text-transform:uppercase;
+}
+
+ol {
+list-style:decimal;
+}
+
+ul {
+list-style:square;
+}
+
+li {
+margin-left:30px;
+}
+
+p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset {
+margin-bottom:20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+line-height:1.2em;
+margin-bottom:.3em;
+}
+
+h1 a {
+font-weight:400;
+}
+
+h1#branding {
+font-weight:400;
+font-size:3em;
+text-align:left;
+background:#aaa;
+margin-bottom:0;
+padding:.7em 1em;
+}
+
+h2#page-heading {
+font-weight:400;
+border-bottom:1px solid #ccc;
+margin:0 0 10px;
+padding:.5em;
+}
+
+#secondary h1 {
+padding:10px 0 0;
+}
+
+.small {
+font-weight:800;
+}
+
+.lightbox h3,.darkbox h3 {
+color:#372e1f;
+font-size:1.25em;
+text-transform:uppercase;
+}
+
+.greencolor {
+font-size:1.15em;
+color:#5d7c43;
+font-weight:700;
+}
+
+.date {
+line-height:.015em;
+}
+
+.darkgreen h3 {
+color:#fff;
+padding-top:5px;
+font-size:1em;
+text-transform:uppercase;
+text-align:center;
+}
+
+#footer h3 {
+padding-top:30px;
+margin-right:10px;
+border-bottom:1px solid #322620;
+color:#f6efdf;
+}
+
+#footer small {
+padding-top:30px;
+float:right;
+}
+
+#footer a {
+color:#f6efdf;
+}
+
+#showcase_text h2 {
+font-size:1.35em;
+}
+
+#showcase_text p {
+font-size:.85em;
+}
