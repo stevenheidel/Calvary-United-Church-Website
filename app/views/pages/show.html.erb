@@ -1,17 +1,15 @@
 <%#= render :partial => "/shared/content_page" %>
 
 <div id="main" class="grid_7">
-        <div id="article"><img src="images/assets/church_sidepage.png" alt="side image" />
-          <h1>Our people</h1>
+  <div id="article">
+    <img src="images/assets/church_sidepage.png" alt="side image" />
+    
+    <h1><%= page_title %></h1>
 
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-          hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel,
-          dapibus id, mattis vel, nisi. Lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In
-          nisi neque, aliquet vel, dapibus id, mattis vel, nisi.</p>
-
-		</div>
-          <div class="spacer"></div>
+    <%=raw @page[:body] %>
+	</div>
+  
+  <div class="spacer"></div>
 
 
         <div class="divider"></div>

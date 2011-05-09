@@ -1,17 +1,7 @@
 <div id="main" class="grid_7">
-  <h1>Answering the Call</h1>
+  <h1><%= page_title %></h1>
 
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-  hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel,
-  dapibus id, mattis vel, nisi. Lorem ipsum dolor sit amet, consectetuer
-  adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In
-  nisi neque, aliquet vel, dapibus id, mattis vel, nisi.</p>
-
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-  hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel,
-  dapibus id, mattis vel, nisi. Lorem ipsum dolor sit amet, consectetuer
-  adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In
-  nisi neque, aliquet vel, dapibus id, mattis vel, nisi.</p>
+  <%=raw @page[:body] %>
 
   <div class="spacer"></div>
 
@@ -21,17 +11,7 @@
 
   <div id="fp_news">
     
-    <h1>Latest News</h1>
-  
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-    hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel,
-    dapibus id, mattis vel, nisi.</p>
-  
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-    hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel,
-    dapibus id, mattis vel, nisi. Lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In
-    nisi neque, aliquet vel, dapibus id, mattis vel, nisi.</p>
+    <%=raw @page[:side_body] %>
   
   </div><!-- /fp_news -->
 </div><!-- /main -->
