@@ -28,29 +28,7 @@
   <!--[if IE 6]><!-->
   <%= stylesheet_link_tag "ie6.css", :media => "screen, projection" %>
   <!-- <![endif]-->
-  
-  <%= javascript_include_tag "slideshow.js" %>
-  
-  <script type="text/javascript">
-  //<![CDATA[
-  <!--
-
-  SLIDES = new slideshow("SLIDES");
-
-  // Create some slides and add custom filters for Microsoft IE
-  SLIDES.add_slide(s = new slide('images/assets/slide1_church.jpg'));
-  s.filter = 'progid:DXImageTransform.Microsoft.Pixelate()';
-
-  SLIDES.add_slide(s = new slide('images/assets/slide2_church.jpg'));
-  s.filter = 'progid:DXImageTransform.Microsoft.Fade()';
-
-  SLIDES.add_slide(s = new slide('images/assets/slide3_church.jpg'));
-  s.filter = 'progid:DXImageTransform.Microsoft.Barn()';
-
-  //-->
-  //]]>
-  </script>
-  
+    
   <%= javascript_include_tag "tabber.js" %>
   
   <script type="text/javascript">

@@ -185,10 +185,19 @@ background:url(../images/sidebar_solid_bottom.png) no-repeat;
 }
 
 #logo {
+  height:25px;
 margin-top:40px;
 clear:right;
 margin-bottom:39px;
 }
+
+  #logo a:link, a:visited {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    outline: none;
+    text-decoration: none;
+  }
 
 #footer_top {
 background:#2d221c url(../images/footer_bck.png) no-repeat;

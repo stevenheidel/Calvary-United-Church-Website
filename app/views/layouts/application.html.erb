@@ -4,7 +4,7 @@
   <% site_bar = render(:partial => "/shared/site_bar", :locals => {:head => true}) -%>
   <%= render :partial => "/shared/head" %>
   
-  <body id="<%= home_page? ? "home" : "sub" %>" onload="SLIDES.play();">
+  <body id="<%= home_page? ? "home" : "sub" %>">
     <%= site_bar -%>
     <%= render :partial => "/shared/ie6check" if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
     
@@ -21,7 +21,7 @@
           </div>
           
           <div id="logo">
-            <a href="/"><img src="images/assets/logo.png" alt="logo" /></a>
+            <h1><a href="/">Calvary United Church</a></h1>
           </div><!-- /logo -->
           
           <div id="horiz-menu" class="moomenu">
