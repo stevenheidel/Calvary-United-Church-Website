@@ -191,7 +191,7 @@ clear:right;
 margin-bottom:39px;
 }
 
-  #logo a:link, a:visited {
+  #logo a:link, #logo a:visited {
     font-weight: bold;
     font-size: 1.5em;
     color: white;

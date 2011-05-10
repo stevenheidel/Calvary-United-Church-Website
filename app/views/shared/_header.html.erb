@@ -11,22 +11,22 @@ That way, showcase_text can be a page part. %>
     <div id="showcase_text">
       <h2>Welcome to our church</h2>
 
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-      hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel.</p>
+      <p>Calvary United Church is a United Church located in Prince Albert, Saskatchewan.
+        We offer a welcoming and friendly environment and do much service in the community.</p>
 
       <div class="topbutton">
-        <a href="#">Learn more</a>
+        <a href="/about">Learn more</a>
       </div>
 
       <div class="topbutton">
-        <a href="#">How to get here</a>
+        <a href="/map">How to get here</a>
       </div>
     </div>
   </div><!-- /showcase --><% else %>
 
   <div id="subname">
-    <h3>Who We Are </h3>
-    <div id="breadcrumb"><a href="#">home</a>/<a href="#">who we are</a></div>
+    <h3><%= page_title %></h3>
+    <div id="breadcrumb"><a href="#">home</a>/<a href="#"><%= page_title.downcase %></a></div>
   </div>
   
 <% end %>
