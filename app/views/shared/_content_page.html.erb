@@ -1,3 +1,5 @@
+<div id="main" class="grid_7">
+
 <%
   # provide a default array for collecting CSS for sections
   css = []
@@ -50,7 +52,7 @@
       if section[:title]
         section[:html] = "<h1 id='#{dom_id}'>#{section[:html]}</h1>"
       else
-        section[:html] = "<section id='#{dom_id}'>#{section[:html]}</section>"
+        section[:html] = "#{section[:html]}"
       end
     else
       css << "no_#{dom_id}"
@@ -61,3 +63,5 @@
   <%= raw sections.map{|section| section[:html]}.join("\n") -%>
 </section>
 <%= render :partial => '/shared/draft_page_message' unless @page.nil? or @page.live? -%>
+
+</div>

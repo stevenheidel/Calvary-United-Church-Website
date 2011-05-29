@@ -509,7 +509,7 @@ clear:right;
 }
 
 li {
-list-style:none;
+  /*list-style:none;*/
 }
 
 .divider {
@@ -520,8 +520,8 @@ margin-bottom:30px;
 margin-top:30px;
 }
 
-a:hover,h3,.button:hover {
-color:#5d7c43;
+a:hover,.button:hover {
+    color:white;
 }
 
 hr,.hide,legend {

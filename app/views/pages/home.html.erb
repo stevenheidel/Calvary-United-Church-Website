@@ -1,17 +1,2 @@
-<div id="main" class="grid_7">
-  <h1><%= page_title %></h1>
 
-  <%=raw @page[:body] %>
-
-  <div class="spacer"></div>
-
-  <div id="picturebox"><img src="images/assets/small_bibles.jpg" alt=
-    "small1" /><img src="images/assets/small2.jpg" alt="small2" /><img src=
-    "images/assets/small3.jpg" alt="small3" /></div><!-- /picturebox -->
-
-  <div id="fp_news">
-    
-    <%=raw @page[:side_body] %>
-  
-  </div><!-- /fp_news -->
-</div><!-- /main -->
+<%= render :partial => "/shared/content_page" %>

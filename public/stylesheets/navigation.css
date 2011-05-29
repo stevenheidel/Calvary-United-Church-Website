@@ -53,7 +53,7 @@ display:block;
 padding:3px 2px;
 }
 
-ul.sub-nav li.nav-selected a {
+ul.sub-nav li#menu-selected a {
 color:#000;
 font-weight:700;
 }
@@ -136,25 +136,25 @@ div#horiz-menu li li span,div#horiz-menu li.active li span,div#horiz-menu li:hov
 background:none;
 }
 
-.nav {
+#menu {
 line-height:.85;
 float:left;
 margin-bottom:1.5em;
 position:relative;
 }
 
-.nav ul {
+#menu ul {
 background:#fff;
 padding:0;
 }
 
-.nav li {
+#menu li {
 float:left;
 list-style:none;
 position:relative;
 }
 
-.nav li li a {
+#menu li li a {
 display:block;
 text-decoration:none;
 background-image:none;
@@ -171,7 +171,7 @@ line-height:30px;
 color:#fff;
 }
 
-.nav li ul {
+#menu li ul {
 float:none;
 left:-999em;
 position:absolute;
@@ -180,22 +180,22 @@ z-index:5;
 color:#fff;
 }
 
-.nav li:hover ul,.nav li.sfHover ul {
+#menu li:hover ul,#menu li.sfHover ul {
 left:5px;
 top:42px;
 }
 
-.nav li:hover li ul,.nav li.sfHover li ul,.nav li li:hover li ul,.nav li li.sfHover li ul,.nav li li li:hover li ul,.nav li li li.sfHover li ul {
+#menu li:hover li ul,#menu li.sfHover li ul,#menu li li:hover li ul,#menu li li.sfHover li ul,#menu li li li:hover li ul,#menu li li li.sfHover li ul {
 top:-999em;
 }
 
-.nav li li:hover ul,.nav li li.sfHover ul,.nav li li li:hover ul,.nav li li li.sfHover ul,.nav li li li li:hover ul,.nav li li li li.sfHover ul {
+#menu li li:hover ul,#menu li li.sfHover ul,#menu li li li:hover ul,#menu li li li.sfHover ul,#menu li li li li:hover ul,#menu li li li li.sfHover ul {
 left:178px;
 top:0;
 width:175px;
 }
 
-.nav li li {
+#menu li li {
 position:relative;
 float:none;
 width:175px;
@@ -238,11 +238,11 @@ body:nth-of-type(1) #horiz-menu {
 padding-top:1px;
 }
 
-#horiz-menu .nav li.selected a,#horiz-menu .nav li a:hover {
+#horiz-menu #menu li.selected a,#horiz-menu #menu li a:hover {
 color:#322620;
 }
 
-.nav li li:hover,.nav li li.sfHover,#horiz-menu li:hover li:hover,#horiz-menu li.sfHover li.sfHover,#horiz-menu li.active li.active {
+#menu li li:hover,#menu li li.sfHover,#horiz-menu li:hover li:hover,#horiz-menu li.sfHover li.sfHover,#horiz-menu li.active li.active {
 background:#d7d7c4;
 }
 
@@ -250,11 +250,11 @@ background:#d7d7c4;
 background:url(../images/bullet-sucker.png) 100% 50% no-repeat;
 }
 
-.nav li.sfHover,.nav li:hover,.nav li.selected {
+#menu li.sfHover,#menu li:hover,#menu li.selected {
 background:url(../images/menu2-r.png) 100% 0 no-repeat;
 }
 
-.nav li.sfHover a,.nav li:hover a,.nav li.selected a {
+#menu li.sfHover a,#menu li:hover a,#menu li.selected a {
 background:url(../images/menu2-l.png) 0 0 no-repeat;
 }
 
