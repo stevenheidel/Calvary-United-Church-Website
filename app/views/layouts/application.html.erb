@@ -14,9 +14,9 @@
           <div id="menu5" class="grid_3">
             <ul>
               <%# TODO: Make this dynamic. %>
-              <li><a href="/staff">Staff Directory</a></li>
-              <li><a href="#">The Sunday Service</a></li>
-              <li><a href="/contact">Contact Us</a></li>
+              <li><a href="/staff"><%= copywriting('Staff Link', { :scope => 'Top Bar', :default => 'Staff Directory' }) %></a></li>
+              <li><a href="/sunday-service"><%= copywriting('Sunday Sermon Link', { :scope => 'Top Bar', :default => 'The Sunday Service' }) %></a></li>
+              <li><a href="/contact"><%= copywriting('Contact Link', { :scope => 'Top Bar', :default => 'Contact Us' }) %></a></li>
             </ul>
           </div>
           

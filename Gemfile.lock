@@ -108,6 +108,7 @@ GEM
       filters_spam (~> 0.2)
       refinerycms-core (~> 1.0.3)
       seo_meta (~> 1.1.0)
+    refinerycms-copywriting (1.0.9)
     refinerycms-core (1.0.8)
       acts_as_indexed (~> 0.7)
       awesome_nested_set (~> 2.0)
@@ -122,6 +123,9 @@ GEM
     refinerycms-dashboard (1.0.8)
       refinerycms-core (= 1.0.8)
     refinerycms-generators (1.0.3)
+    refinerycms-i18n (1.0.0)
+      refinerycms-core (>= 0.9.9.12)
+      routing-filter (>= 0.2.3)
     refinerycms-images (1.0.8)
       activerecord (~> 3.0.10)
       dragonfly (~> 0.9.0)
@@ -144,6 +148,8 @@ GEM
     refinerycms-settings (1.0.8)
       activerecord (~> 3.0.10)
       refinerycms-base (= 1.0.8)
+    routing-filter (0.2.4)
+      actionpack
     seo_meta (1.1.1)
       refinerycms-generators (~> 1.0.1)
     sqlite3 (1.3.4)
@@ -166,5 +172,7 @@ DEPENDENCIES
   rails (= 3.0.10)
   refinerycms (~> 1.0.8)
   refinerycms-blog (~> 1.5)
+  refinerycms-copywriting
+  refinerycms-i18n (~> 1.0.0)
   refinerycms-inquiries (~> 1.0)
   sqlite3

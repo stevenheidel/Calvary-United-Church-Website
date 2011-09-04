@@ -17,7 +17,7 @@
   <div class="spacer"></div>
 -->
   <div class="darkgreen">
-    <h3><a href="/about">New to our church? No problem!</a></h3>
+    <h3><a href="/about"><%= copywriting('New Members Link', { :scope => 'Sidebar', :default => 'New to our church? No problem!' }) %></a></h3>
   </div>
 
   <div class="spacer"></div>
@@ -27,7 +27,7 @@
   <div class="darkbox">
     <h3>Worship Time</h3>
 
-    <p class="greencolor">Sunday 10:30am</p>
+    <p class="greencolor"><%= copywriting('Worship Time', { :scope => 'Sidebar', :default => 'Sunday 10:30am' }) %></p>
 
     <div class="group"></div>
   </div>
@@ -41,21 +41,26 @@
   <div class="lightbox">
     <h3>Latest Events</h3>
 
-    <p class="greencolor">Teddy Bear's Picnic<br /><em>June 11</em></p>
+    <p class="greencolor"><%= copywriting('Event 1 Title', { :scope => 'Sidebar', :default => 'Event 1 Title' }) %><br />
+      <em><%= copywriting('Event 1 Date', { :scope => 'Sidebar', :default => 'Event 1 Date' }) %></em></p>
 
     <p></p>
     
     <hr />
 
-    <p class="greencolor">Confirmation Sunday<br /><em><span>June 12</span></em></p>
+    <p class="greencolor"><%= copywriting('Event 2 Title', { :scope => 'Sidebar', :default => 'Event 2 Title' }) %><br />
+      <em><%= copywriting('Event 2 Date', { :scope => 'Sidebar', :default => 'Event 2 Date' }) %></em></p>
 
     <p></p>
     
     <hr />
     
-    <p class="greencolor">Baptism Sunday<br /><em><span>June 19</span></em></p>
+    <p class="greencolor"><%= copywriting('Event 3 Title', { :scope => 'Sidebar', :default => 'Event 3 Title' }) %><br />
+      <em><%= copywriting('Event 3 Date', { :scope => 'Sidebar', :default => 'Event 3 Date' }) %></em></p>
 
     <p></p>
+    
+    <p><a href="/events">See more events...</a></p>
 
     <div class="group"></div>
   </div>

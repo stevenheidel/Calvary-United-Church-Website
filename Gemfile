@@ -53,7 +53,9 @@ gem 'refinerycms-inquiries',    '~> 1.0'
 gem 'refinerycms-blog',         '~> 1.5'
 # gem 'refinerycms-page-images',  '~> 1.0'
 
+gem 'refinerycms-copywriting'
+
 # Add i18n support (optional, you can remove this if you really want to).
-# gem 'refinerycms-i18n',         '~> 1.0.0'
+gem 'refinerycms-i18n',         '~> 1.0.0'
 
 # END USER DEFINED

@@ -9,17 +9,16 @@ That way, showcase_text can be a page part. %>
     </div>
 
     <div id="showcase_text">
-      <h2>Welcome to our church</h2>
+      <h2><%= copywriting('Title', { :scope => 'Home Page Feature', :default => 'Welcome to our church' }) %></h2>
 
-      <p>Calvary United Church is a United Church located in Prince Albert, Saskatchewan.
-        We offer a welcoming and friendly environment and do much service in the community.</p>
+      <p><%= copywriting('Description', { :scope => 'Home Page Feature', :default => 'Calvary United Church is a United Church located in Prince Albert, Saskatchewan. We offer a welcoming and friendly environment and do much service in the community.' }) %></p>
 
       <div class="topbutton">
-        <a href="/about">Learn more</a>
+        <a href="/about"><%= copywriting('Link to About Page', { :scope => 'Home Page Feature', :default => 'Learn More' }) %></a>
       </div>
 
       <div class="topbutton">
-        <a href="/map">How to get here</a>
+        <a href="/map"><%= copywriting('Link to Map Page', { :scope => 'Home Page Feature', :default => 'How to Get Here' }) %></a>
       </div>
     </div>
   </div><!-- /showcase --><% else %>
